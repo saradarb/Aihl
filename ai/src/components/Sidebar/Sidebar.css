@@ -1,0 +1,111 @@
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: rgba(10, 10, 30, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 25px 15px;
+    border-right: 1px solid rgba(138, 43, 226, 0.2);
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+  }
+  
+  .sidebar .top {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar img {
+    width: 20px;
+    filter: brightness(0) invert(1);
+  }
+  
+  .sidebar .menu {
+    display: block;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background: linear-gradient(135deg, #8a2be2, #9370db);
+    border-radius: 30px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(138, 43, 226, 0.2);
+  }
+  
+  .sidebar .new-chat:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(138, 43, 226, 0.4);
+  }
+  
+  .sidebar .recent {
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+  }
+  
+  .sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #b8b8b8;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  
+  .sidebar .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: #e0e0e0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .sidebar .recent-entry:hover {
+    background: rgba(138, 43, 226, 0.15);
+    color: #fff;
+  }
+  
+  .sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+    color: #b8b8b8;
+    transition: color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  .sidebar .bottom-item:hover {
+    color: #fff;
+  }
+  
+  @media (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+  }
+  
+  /* Optional fadeIn animation (if not already declared) */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  

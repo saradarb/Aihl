@@ -1,6 +1,6 @@
 {
   "name": "Aihl",
-  "homepage":"https://saradarb.github.io/Aihl/",
+  "homepage": "https://saradarb.github.io/Aihl/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,11 +9,11 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build"
-
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
