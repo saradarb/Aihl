@@ -53,9 +53,9 @@ function Price() {
                 "Access to Veritas AI and reasoning",
                 "Standard voice mode",
                 "Real-time data from the web with search",
-                "Limited access to GPT-4o and o4-mini",
+                "Limited access to Veritas AI",
                 "Limited access to file uploads, advanced data analysis, and image generation",
-                "Use custom GPTs"
+                "Use custom Veritas AI"
               ]
             },
             {

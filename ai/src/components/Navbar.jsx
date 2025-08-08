@@ -21,8 +21,8 @@ function Navbar() {
         <a href="/"></a>
         <a href="/Aihl/pricing"></a>
       </div>
-      <button className="nav-contact" onClick={() => window.location.href='/Aihl/contactus'}>
-        Contact us
+      <button className="nav-contact" onClick={() => window.location.href='/Aihl/chat'}>
+        Try Me
       </button>
       <div className="hamburger" onClick={toggleMenu}>
         <span></span><span></span><span></span><span></span>

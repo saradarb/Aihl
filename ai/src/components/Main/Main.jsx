@@ -60,18 +60,18 @@ function Main() {
             </div>
              }
             
-            <div className="main-bottom">
-                <div className="search-box">
-                    <input onChange={(e)=>setInput(e.target.value)} value={input} type="text" placeholder="Entre a prompt here"/>
-                    <div>
-                        {input ? <img onClick={()=>onSent()} src={assets.send_icon} alt="" /> : null}
-                    </div>
+            <div className="main-bottom1">
+                <div className="search-box1">
+                <input type="text" value={input} onChange={(e) => setInput(e.target.value)}
+                onKeyDown={(e) => {
+                if (e.key === "Enter") {
+                onSent();}}}/>
+
+          <div> {input ? (<img onClick={() => onSent()} src={assets.send_icon} alt=""
+           style={{ cursor: "pointer" }}/>) : null}
+           </div>
                 </div>
-              
-
             </div>
-
-
         </div>
     </div>
   )

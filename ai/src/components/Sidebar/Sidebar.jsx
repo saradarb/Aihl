@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import "./Sidebar.css";
 import {assets} from '../../assets/assets';
 import { Context } from '../../context/Context';
+import { Link } from 'react-router';
 
 
 function Sidebar() {
@@ -48,15 +49,11 @@ function Sidebar() {
     <div className="bottom">
         <div className="bottom-item recent-entry">
             <img src={assets.question_icon} />
-            {extended ? <p>Help</p> : null} 
-        </div>
-        <div className="bottom-item recent-entry">
-            <img src={assets.history_icon} />
-            {extended ? <p>Activity</p> : null} 
+            {extended ? <Link to="/Aihl/Help" style={{ textDecoration: "none", color: "inherit" }}>Help</Link> : null} 
         </div>
         <div className="bottom-item recent-entry">
             <img src={assets.setting_icon} />
-            {extended ? <p>Settings</p> : null} 
+            {extended ? <Link to="/Aihl/Settings" style={{ textDecoration: "none", color: "inherit" }}>Settings</Link> : null} 
         </div>
 
     </div>
