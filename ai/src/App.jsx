@@ -12,6 +12,7 @@ import Settings from './components/Settings/Settings';
 
 
 function App() {
+  // hi
   return (
     <Router>
       <Routes>
