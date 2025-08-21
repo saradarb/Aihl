@@ -15,17 +15,16 @@ import Settings from "./components/Settings/Settings";
 function App() {
   // hi
   return (
-    <HashRouter>
-      <Router>
-        <Routes>
-          <Route path="/Aihl" element={<Lobby />} />
-          <Route path="/Aihl/chat" element={<AiChat />} />
-          <Route path="/Aihl/Price" element={<Price />} />
-          <Route path="/Aihl/Help" element={<Help />} />
-          <Route path="/Aihl/Settings" element={<Settings />} />
-        </Routes>
-      </Router>
-    </HashRouter>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Lobby />} />
+        <Route path="/Aihl" element={<Lobby />} />
+        <Route path="/Aihl/chat" element={<AiChat />} />
+        <Route path="/Aihl/Price" element={<Price />} />
+        <Route path="/Aihl/Help" element={<Help />} />
+        <Route path="/Aihl/Settings" element={<Settings />} />
+      </Routes>
+    </Router>
   );
 }
 
