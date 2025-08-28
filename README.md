@@ -131,7 +131,7 @@ const [resultData, setResultData] = useState('');
 
 <div align="center">
 
-### 🌟 **Built with passion and lots of Matcha** 🍵
+### **Built with passion and lots of Matcha** 🍵
 
 ![Footer Animation](https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif)
 
